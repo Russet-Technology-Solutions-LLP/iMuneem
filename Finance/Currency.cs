@@ -1,14 +1,16 @@
 ﻿using Russet.iMuneem.Base;
+using Russet.iMuneem.Communications;
+using Russet.iMuneem.Organization;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Russet.iMuneem.Finance
 {
     public class Currency : DomainObject
     {
+        public string Name { get; set; }
+        public string Symbol { get; set; }
+
         public bool IsDefault { get; set; }
 
         ///<summary>
@@ -22,5 +24,10 @@ namespace Russet.iMuneem.Finance
                 return Validate<Currency>();
             }
         }
+
+        #region Navigation Properties
+        public virtual IList<Company> Companies { get; set; }
+        public virtual IList<Country> Countries { get; set; }
+        #endregion
     }
 }

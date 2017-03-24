@@ -1,9 +1,13 @@
 ﻿using Russet.iMuneem.Base;
+using System;
+using System.Collections.Generic;
 
 namespace Russet.iMuneem.Communications
 {
     public class ZipCode : DomainObject
     {
+        public Guid CityID { get; set; }
+
         public string Code { get; set; }
 
         ///<summary>
@@ -17,5 +21,10 @@ namespace Russet.iMuneem.Communications
                 return Validate<ZipCode>();
             }
         }
+
+        #region Navigation Properties
+        public virtual IList<Address> Addresses { get; set; }
+        public virtual City City { get; set; }
+        #endregion
     }
 }

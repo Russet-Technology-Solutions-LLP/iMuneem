@@ -1,14 +1,12 @@
 ﻿using Russet.iMuneem.Base;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Russet.iMuneem.Transactions
 {
     public class VoucherNumbering : DomainObject
     {
+        public string Name { get; set; }
+        public string Abbrebiation { get; set; }
         ///<summary>
         ///Gets or sets a value indicating whether this instance is valid.
         /// </summary>
@@ -20,5 +18,9 @@ namespace Russet.iMuneem.Transactions
                 return Validate<VoucherNumbering>();
             }
         }
+
+        #region Navigation Properties
+        public virtual IList<Voucher> Vouchers { get; set; }
+        #endregion
     }
 }

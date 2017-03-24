@@ -54,8 +54,10 @@
     <Compile Include="Categories\Group.cs" />
     <Compile Include="Categories\CategoryType.cs" />
     <Compile Include="Communications\Address.cs" />
+    <Compile Include="Communications\AddressType.cs" />
     <Compile Include="Communications\City.cs" />
     <Compile Include="Communications\Contact.cs" />
+    <Compile Include="Communications\ContactType.cs" />
     <Compile Include="Communications\Country.cs" />
     <Compile Include="Communications\State.cs" />
     <Compile Include="Communications\ZipCode.cs" />

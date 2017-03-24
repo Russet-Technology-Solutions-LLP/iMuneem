@@ -1,10 +1,13 @@
 ﻿using Russet.iMuneem.Base;
 using Russet.iMuneem.Categories;
+using System;
 
 namespace Russet.iMuneem.Ledgers
 {
     public class Account : DomainObject
     {
+        public Guid GroupID { get; set; }
+
         public string Name { get; set; }
         public string Alias { get; set; }
         public double OpeningBalance { get; set; }

@@ -1,14 +1,14 @@
 ﻿using Russet.iMuneem.Base;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Russet.iMuneem.Transactions
 {
     public class Voucher : DomainObject
     {
+        public Guid TypeID { get; set; }
+        public Guid? NumberingID { get; set; }
+
         public string Name { get; set; }
         public string Narration { get; set; }
 

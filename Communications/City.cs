@@ -1,10 +1,12 @@
 ﻿using Russet.iMuneem.Base;
+using System;
 using System.Collections.Generic;
 
 namespace Russet.iMuneem.Communications
 {
     public class City : DomainObject
     {
+        public Guid StateID { get; set; }
         public string Name { get; set; }
         public string Code { get; set; }
 
@@ -22,6 +24,8 @@ namespace Russet.iMuneem.Communications
 
         #region Navigation Properties
         public virtual IList<ZipCode> ZipCodes { get; set; }
+        public virtual IList<Address> Addresses { get; set; }
+        public virtual State State { get; set; }
         #endregion
     }
 }

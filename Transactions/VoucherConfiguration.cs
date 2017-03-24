@@ -1,14 +1,12 @@
 ﻿using Russet.iMuneem.Base;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Russet.iMuneem.Transactions
 {
     public class VoucherConfiguration : DomainObject
     {
+        public Guid VoucherID { get; set; }
+
         public string Name { get; set; }
         public string Configuration { get; set; }
 
@@ -23,5 +21,9 @@ namespace Russet.iMuneem.Transactions
                 return Validate<VoucherConfiguration>();
             }
         }
+
+        #region Navigation Properties
+        public virtual Voucher Voucher { get; set; }
+        #endregion
     }
 }

@@ -1,5 +1,6 @@
 ﻿using Russet.iMuneem.Base;
 using Russet.iMuneem.Finance;
+using Russet.iMuneem.Organization;
 using System.Collections.Generic;
 
 namespace Russet.iMuneem.Communications
@@ -39,6 +40,8 @@ namespace Russet.iMuneem.Communications
         #region Navigation Properties
         public virtual IList<State> States { get; set; }
         public virtual IList<Currency> Currencies { get; set; }
+        public virtual IList<Company> Companies { get; set; }
+        public virtual IList<Address> Addresses { get; set; }
         #endregion
     }
 }

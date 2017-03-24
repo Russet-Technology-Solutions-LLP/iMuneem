@@ -1,9 +1,5 @@
 ﻿using Russet.iMuneem.Base;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Russet.iMuneem.Categories
 {
@@ -22,5 +18,9 @@ namespace Russet.iMuneem.Categories
                 return Validate<CategoryType>();
             }
         }
+
+        #region Navigation Properties
+        public virtual IList<Category> Categories { get; set; }
+        #endregion
     }
 }

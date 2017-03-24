@@ -1,16 +1,15 @@
 ﻿using Russet.iMuneem.Base;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Russet.iMuneem.Transactions
+namespace Russet.iMuneem.Communications
 {
-    public class VoucherType : DomainObject
+    public class AddressType : DomainObject
     {
+        ///<summary>
+        /// Gets or sets the name of contact type.
+        /// </summary>
+        /// <value>The name.</value>
         public string Name { get; set; }
-        public string Abbrebiation { get; set; }
 
         ///<summary>
         ///Gets or sets a value indicating whether this instance is valid.
@@ -20,12 +19,12 @@ namespace Russet.iMuneem.Transactions
         {
             get
             {
-                return Validate<VoucherType>();
+                return Validate<AddressType>();
             }
         }
 
         #region Navigation Properties
-        public virtual IList<Voucher> Vouchers { get; set; }
+        public virtual IList<Address> Addresses { get; set; }
         #endregion
     }
 }

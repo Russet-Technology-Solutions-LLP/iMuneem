@@ -19,5 +19,9 @@ namespace Russet.iMuneem.Finance
                 return Validate<FinancialBook>();
             }
         }
+
+        #region Navigation Properties
+        public virtual FinancialYear FinancialYear { get; set; }
+        #endregion
     }
 }
