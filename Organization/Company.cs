@@ -11,6 +11,10 @@ namespace Russet.iMuneem.Organization
     {
         public Guid CurrencyID { get; set; }
         public Guid CountryID { get; set; }
+        public Guid StateID { get; set; }
+        public Guid CityID { get; set; }
+        public Guid ZipCodeID { get; set; }
+
         public string Name { get; set; }
         public string MailingName { get; set; }
 
@@ -224,6 +228,9 @@ namespace Russet.iMuneem.Organization
         public virtual IList<Contact> Contacts { get; set; }
         public virtual Currency Currency { get; set; }
         public virtual Country Country { get; set; }
+        public virtual State State { get; set; }
+        public virtual City City { get; set; }
+        public virtual ZipCode ZipCode { get; set; }
         public virtual IList<FinancialYear> FinancialYears { get; set; }
         #endregion
     }

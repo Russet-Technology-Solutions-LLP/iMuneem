@@ -1,4 +1,5 @@
 ﻿using Russet.iMuneem.Base;
+using Russet.iMuneem.Organization;
 using System;
 using System.Collections.Generic;
 
@@ -26,6 +27,7 @@ namespace Russet.iMuneem.Communications
         #region Navigation Properties
         public virtual IList<City> Cities { get; set; }
         public virtual IList<Address> Addresses { get; set; }
+        public virtual IList<Company> Companies { get; set; }
         public virtual Country Country { get; set; }
         #endregion
     }
