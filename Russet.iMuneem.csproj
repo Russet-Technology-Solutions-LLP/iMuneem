@@ -30,7 +30,16 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Common, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.Validation, Version=6.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>packages\EnterpriseLibrary.Validation.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.Validation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,8 +50,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\DomainObject.cs" />
+    <Compile Include="Categories\Category.cs" />
     <Compile Include="Categories\Group.cs" />
-    <Compile Include="Categories\GroupType.cs" />
+    <Compile Include="Categories\CategoryType.cs" />
     <Compile Include="Communications\Address.cs" />
     <Compile Include="Communications\City.cs" />
     <Compile Include="Communications\Contact.cs" />
@@ -53,10 +63,16 @@
     <Compile Include="Finance\FinancialBook.cs" />
     <Compile Include="Finance\FinancialYear.cs" />
     <Compile Include="Ledgers\Account.cs" />
+    <Compile Include="Ledgers\InventoryAccount.cs" />
     <Compile Include="Organization\Company.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Transactions\Voucher.cs" />
+    <Compile Include="Transactions\VoucherConfiguration.cs" />
+    <Compile Include="Transactions\VoucherNumbering.cs" />
     <Compile Include="Transactions\VoucherType.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

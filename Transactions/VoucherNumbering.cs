@@ -1,13 +1,14 @@
 ﻿using Russet.iMuneem.Base;
 using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Russet.iMuneem.Finance
+namespace Russet.iMuneem.Transactions
 {
-    public class FinancialYear : DomainObject
+    public class VoucherNumbering : DomainObject
     {
-        public DateTime Starting { get; set; }
-        public DateTime? Ending { get; set; }
-
         ///<summary>
         ///Gets or sets a value indicating whether this instance is valid.
         /// </summary>
@@ -16,12 +17,8 @@ namespace Russet.iMuneem.Finance
         {
             get
             {
-                return Validate<FinancialYear>();
+                return Validate<VoucherNumbering>();
             }
         }
-
-        #region Navigation Properties
-        public virtual FinancialBook FinancialBook { get; set; }
-        #endregion
     }
 }

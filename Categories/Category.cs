@@ -1,12 +1,11 @@
 ﻿using Russet.iMuneem.Base;
-using System;
 
-namespace Russet.iMuneem.Finance
+namespace Russet.iMuneem.Categories
 {
-    public class FinancialYear : DomainObject
+    public class Category : DomainObject
     {
-        public DateTime Starting { get; set; }
-        public DateTime? Ending { get; set; }
+        public string Name { get; set; }
+        public string Alias { get; set; }
 
         ///<summary>
         ///Gets or sets a value indicating whether this instance is valid.
@@ -16,12 +15,12 @@ namespace Russet.iMuneem.Finance
         {
             get
             {
-                return Validate<FinancialYear>();
+                return Validate<Category>();
             }
         }
 
         #region Navigation Properties
-        public virtual FinancialBook FinancialBook { get; set; }
+        public virtual CategoryType Type { get; set; }
         #endregion
     }
 }

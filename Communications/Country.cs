@@ -1,9 +1,6 @@
 ﻿using Russet.iMuneem.Base;
-using System;
+using Russet.iMuneem.Finance;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Russet.iMuneem.Communications
 {
@@ -12,8 +9,36 @@ namespace Russet.iMuneem.Communications
         public string Name { get; set; }
         public string Code { get; set; }
 
+        public Currency DefaultCurrency
+        {
+            get
+            {
+                if(Currencies != null)
+                    foreach(Currency curr in Currencies)
+                    {
+                        if (curr.IsDefault)
+                            return curr;
+                        return null;
+                    }
+                return null;
+            }
+        }
+
+        ///<summary>
+        ///Gets or sets a value indicating whether this instance is valid.
+        /// </summary>
+        /// <value><c>true</c> if this instance is valid; otherwise, <c>false</c>.</value>
+        public override bool IsValid
+        {
+            get
+            {
+                return Validate<Country>();
+            }
+        }
+
         #region Navigation Properties
         public virtual IList<State> States { get; set; }
+        public virtual IList<Currency> Currencies { get; set; }
         #endregion
     }
 }

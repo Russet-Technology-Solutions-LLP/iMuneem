@@ -1,16 +1,13 @@
-﻿using Russet.iMuneem.Base;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Russet.iMuneem.Finance
+namespace Russet.iMuneem.Ledgers
 {
-    public class Currency : DomainObject
+    public class InventoryAccount : Account
     {
-        public bool IsDefault { get; set; }
-
         ///<summary>
         ///Gets or sets a value indicating whether this instance is valid.
         /// </summary>
@@ -19,7 +16,7 @@ namespace Russet.iMuneem.Finance
         {
             get
             {
-                return Validate<Currency>();
+                return Validate<InventoryAccount>();
             }
         }
     }
