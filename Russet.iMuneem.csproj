@@ -43,6 +43,15 @@
     <Compile Include="Base\DomainObject.cs" />
     <Compile Include="Categories\Group.cs" />
     <Compile Include="Categories\GroupType.cs" />
+    <Compile Include="Communications\Address.cs" />
+    <Compile Include="Communications\City.cs" />
+    <Compile Include="Communications\Contact.cs" />
+    <Compile Include="Communications\Country.cs" />
+    <Compile Include="Communications\State.cs" />
+    <Compile Include="Communications\ZipCode.cs" />
+    <Compile Include="Finance\Currency.cs" />
+    <Compile Include="Finance\FinancialBook.cs" />
+    <Compile Include="Finance\FinancialYear.cs" />
     <Compile Include="Ledgers\Account.cs" />
     <Compile Include="Organization\Company.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
