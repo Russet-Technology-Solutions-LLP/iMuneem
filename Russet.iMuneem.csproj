@@ -41,7 +41,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\DomainObject.cs" />
+    <Compile Include="Categories\Group.cs" />
+    <Compile Include="Categories\GroupType.cs" />
+    <Compile Include="Ledgers\Account.cs" />
+    <Compile Include="Organization\Company.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Transactions\Voucher.cs" />
+    <Compile Include="Transactions\VoucherType.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
