@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Russet.iMuneem", "Russet.iMuneem.csproj", "{219DACCC-7057-458D-A71F-099F086BCE67}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{D5EF5861-0AA7-4BA4-852B-ACC8DA2C2155}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iMuneem.Test", "..\iMuneem.Test\iMuneem.Test.csproj", "{29B260BF-C633-4C2D-AAF7-32E762CA4951}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{4B6C1316-6F9C-45D4-92D7-48E6AF5E6B55}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iMuneem.DAL", "..\iMuneem.DAL\iMuneem.DAL.csproj", "{CBEB63A3-0315-4074-9519-27E7CFAA54D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApp", "..\TestApp\TestApp.csproj", "{7236161E-A397-4A9E-A2AD-D350C5EEEB4F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{219DACCC-7057-458D-A71F-099F086BCE67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{219DACCC-7057-458D-A71F-099F086BCE67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{219DACCC-7057-458D-A71F-099F086BCE67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{219DACCC-7057-458D-A71F-099F086BCE67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29B260BF-C633-4C2D-AAF7-32E762CA4951}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29B260BF-C633-4C2D-AAF7-32E762CA4951}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29B260BF-C633-4C2D-AAF7-32E762CA4951}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29B260BF-C633-4C2D-AAF7-32E762CA4951}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBEB63A3-0315-4074-9519-27E7CFAA54D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBEB63A3-0315-4074-9519-27E7CFAA54D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBEB63A3-0315-4074-9519-27E7CFAA54D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBEB63A3-0315-4074-9519-27E7CFAA54D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7236161E-A397-4A9E-A2AD-D350C5EEEB4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7236161E-A397-4A9E-A2AD-D350C5EEEB4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7236161E-A397-4A9E-A2AD-D350C5EEEB4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7236161E-A397-4A9E-A2AD-D350C5EEEB4F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{29B260BF-C633-4C2D-AAF7-32E762CA4951} = {D5EF5861-0AA7-4BA4-852B-ACC8DA2C2155}
+		{4B6C1316-6F9C-45D4-92D7-48E6AF5E6B55} = {D5EF5861-0AA7-4BA4-852B-ACC8DA2C2155}
+		{CBEB63A3-0315-4074-9519-27E7CFAA54D0} = {4B6C1316-6F9C-45D4-92D7-48E6AF5E6B55}
+		{7236161E-A397-4A9E-A2AD-D350C5EEEB4F} = {D5EF5861-0AA7-4BA4-852B-ACC8DA2C2155}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.Common.6.0.1304.0\lib\NET45;packages\EnterpriseLibrary.Validation.6.0.1304.0\lib\NET45
+	EndGlobalSection
+EndGlobal
