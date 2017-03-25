@@ -9,6 +9,8 @@ namespace Russet.iMuneem.Categories
         public Guid TypeID { get; set; }
         public string Name { get; set; }
         public string Alias { get; set; }
+        // nature of accounts i.e debit or credit balances.
+        public string Nature { get; set; }
 
         ///<summary>
         ///Gets or sets a value indicating whether this instance is valid.
