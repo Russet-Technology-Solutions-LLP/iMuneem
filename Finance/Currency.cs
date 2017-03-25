@@ -3,6 +3,7 @@ using Russet.iMuneem.Communications;
 using Russet.iMuneem.Organization;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Russet.iMuneem.Finance
 {
@@ -22,6 +23,26 @@ namespace Russet.iMuneem.Finance
             get
             {
                 return Validate<Currency>();
+            }
+        }
+
+        ///<summary>
+        /// Adds the country.
+        /// </summary>
+        /// <param name="contact">The contact.</param>
+        public void AddCountry(Country country)
+        {
+            if (Countries == null)
+            {
+                Countries = new List<Country>();
+            }
+
+
+            // If the address is not already in the list
+            if (!Countries.Any(x => x.PrimaryKey == country.PrimaryKey))
+            {
+                Countries.Add(country);
+                //country.AddCurrency(this);
             }
         }
 
