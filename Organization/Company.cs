@@ -1,6 +1,9 @@
 ﻿using Russet.iMuneem.Base;
+using Russet.iMuneem.Categories;
 using Russet.iMuneem.Communications;
 using Russet.iMuneem.Finance;
+using Russet.iMuneem.Ledgers;
+using Russet.iMuneem.Transactions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -232,6 +235,14 @@ namespace Russet.iMuneem.Organization
         public virtual City City { get; set; }
         public virtual ZipCode ZipCode { get; set; }
         public virtual IList<FinancialYear> FinancialYears { get; set; }
+
+        public virtual IList<Category> Categories { get; set; }
+        public virtual IList<CategoryType> CategoryTypes { get; set; }
+        public virtual IList<Group> Groups { get; set; }
+        public virtual IList<Account> Accounts { get; set; }
+        public virtual IList<Voucher> Vouchers { get; set; }
+        public virtual IList<VoucherType> VoucherTypes { get; set; }
+
         #endregion
     }
 }
