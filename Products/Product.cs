@@ -1,4 +1,5 @@
 ﻿using Russet.iMuneem.Base;
+using Russet.iMuneem.Ledgers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -36,6 +37,7 @@ namespace Russet.iMuneem.Products
         public virtual IList<ProductMeasurement> Measurements { get; set; }
         public virtual IList<ProductMaterial> Materials { get; set; }
         public virtual IList<ProductBatch> Batches { get; set; } 
+        public virtual InventoryAccount Account { get; set; }
 
         #endregion
     }

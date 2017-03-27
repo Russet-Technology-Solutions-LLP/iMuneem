@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Russet.iMuneem.Products;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,5 +20,9 @@ namespace Russet.iMuneem.Ledgers
                 return Validate<InventoryAccount>();
             }
         }
+
+        #region Navigation
+        public virtual IList<InventoryHistory> InventoryHistories { get; set; }
+        #endregion
     }
 }

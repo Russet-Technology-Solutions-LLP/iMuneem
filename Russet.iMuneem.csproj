@@ -66,6 +66,8 @@
     <Compile Include="Finance\FinancialYear.cs" />
     <Compile Include="Ledgers\Account.cs" />
     <Compile Include="Ledgers\InventoryAccount.cs" />
+    <Compile Include="Ledgers\InventoryHistory.cs" />
+    <Compile Include="Ledgers\TransactionHistory.cs" />
     <Compile Include="Organization\Company.cs" />
     <Compile Include="Peoples\Persons.cs" />
     <Compile Include="Products\Product.cs" />
@@ -86,7 +88,11 @@
     <Compile Include="Services\Service.cs" />
     <Compile Include="Services\ServiceCategory.cs" />
     <Compile Include="Services\ServicePrice.cs" />
+    <Compile Include="Store\Stock.cs" />
+    <Compile Include="Store\StockItem.cs" />
     <Compile Include="Taxation\Tax.cs" />
+    <Compile Include="Transactions\AccountingVocherEntry.cs" />
+    <Compile Include="Transactions\InventoryVoucherEntry.cs" />
     <Compile Include="Transactions\Voucher.cs" />
     <Compile Include="Transactions\VoucherConfiguration.cs" />
     <Compile Include="Transactions\VoucherNumbering.cs" />
