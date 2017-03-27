@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>1.0.1</version>
+    <title>$title$</title>
+    <authors>Sandeep Sihari</authors>
+    <owners>Russet Technology Solutions LLP</owners>
+    <licenseUrl>https://github.com/Russet-Technology-Solutions-LLP/iMuneem/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/Russet-Technology-Solutions-LLP/iMuneem</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>Intelligent accounting and inventory tool.</description>
+    <releaseNotes>Inventory support added.</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>inventory accounting russet</tags>
+  </metadata>
+</package>
