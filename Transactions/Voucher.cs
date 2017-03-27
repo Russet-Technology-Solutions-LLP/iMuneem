@@ -1,4 +1,5 @@
 ﻿using Russet.iMuneem.Base;
+using Russet.iMuneem.Organization;
 using System;
 using System.Collections.Generic;
 
@@ -6,6 +7,7 @@ namespace Russet.iMuneem.Transactions
 {
     public class Voucher : DomainObject
     {
+        public Guid CompanyID { get; set; }
         public Guid TypeID { get; set; }
         public Guid? NumberingID { get; set; }
 
@@ -28,6 +30,7 @@ namespace Russet.iMuneem.Transactions
         public virtual VoucherType Type { get; set; }
         public virtual VoucherNumbering Numbering { get; set; }
         public virtual IList<VoucherConfiguration> Configurations { get; set; }
+        public virtual Company Company { get; set; }
         #endregion
     }
 }

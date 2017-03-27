@@ -1,14 +1,17 @@
-﻿using Russet.iMuneem.Products;
+﻿using Russet.iMuneem.Base;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Russet.iMuneem.Ledgers
+namespace Russet.iMuneem.Products
 {
-    public class InventoryAccount : Account
+    public class ProductMaterial : DomainObject
     {
+        public string Name { get; set; }
+        public string Description { get; set; }
+
         ///<summary>
         ///Gets or sets a value indicating whether this instance is valid.
         /// </summary>
@@ -17,12 +20,13 @@ namespace Russet.iMuneem.Ledgers
         {
             get
             {
-                return Validate<InventoryAccount>();
+                return Validate<ProductMaterial>();
             }
         }
 
         #region Navigation
-        public virtual IList<InventoryHistory> InventoryHistories { get; set; }
+        // Many to Many mapping
+        public virtual IList<Product> Products { get; set; }
         #endregion
     }
 }

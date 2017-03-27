@@ -66,16 +66,43 @@
     <Compile Include="Finance\FinancialYear.cs" />
     <Compile Include="Ledgers\Account.cs" />
     <Compile Include="Ledgers\InventoryAccount.cs" />
+    <Compile Include="Ledgers\InventoryHistory.cs" />
+    <Compile Include="Ledgers\TransactionHistory.cs" />
     <Compile Include="Organization\Company.cs" />
+    <Compile Include="Peoples\Persons.cs" />
+    <Compile Include="Products\Product.cs" />
+    <Compile Include="Products\ProductBatch.cs" />
+    <Compile Include="Products\ProductCategory.cs" />
+    <Compile Include="Products\ProductCost.cs" />
+    <Compile Include="Products\ProductMaterial.cs" />
+    <Compile Include="Products\ProductMeasurement.cs" />
+    <Compile Include="Products\ProductMovHistory.cs" />
+    <Compile Include="Products\ProductOrderHistory.cs" />
+    <Compile Include="Products\ProductPicture.cs" />
+    <Compile Include="Products\ProductPrice.cs" />
+    <Compile Include="Products\ProductSKU.cs" />
+    <Compile Include="Products\ProductType.cs" />
+    <Compile Include="Products\ProductUnitOfMeasurement.cs" />
+    <Compile Include="Products\ProductVendor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\Service.cs" />
+    <Compile Include="Services\ServiceCategory.cs" />
+    <Compile Include="Services\ServicePrice.cs" />
+    <Compile Include="Store\Stock.cs" />
+    <Compile Include="Store\StockItem.cs" />
+    <Compile Include="Taxation\Tax.cs" />
+    <Compile Include="Transactions\AccountingVocherEntry.cs" />
+    <Compile Include="Transactions\InventoryVoucherEntry.cs" />
     <Compile Include="Transactions\Voucher.cs" />
     <Compile Include="Transactions\VoucherConfiguration.cs" />
     <Compile Include="Transactions\VoucherNumbering.cs" />
     <Compile Include="Transactions\VoucherType.cs" />
+    <Compile Include="Vendors\Vendor.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

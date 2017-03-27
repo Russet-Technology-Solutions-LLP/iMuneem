@@ -1,10 +1,13 @@
 ﻿using Russet.iMuneem.Base;
+using Russet.iMuneem.Organization;
+using System;
 using System.Collections.Generic;
 
 namespace Russet.iMuneem.Transactions
 {
     public class VoucherType : DomainObject
     {
+        public Guid CompanyID { get; set; }
         public string Name { get; set; }
         public string Abbrebiation { get; set; }
 
@@ -22,6 +25,7 @@ namespace Russet.iMuneem.Transactions
 
         #region Navigation Properties
         public virtual IList<Voucher> Vouchers { get; set; }
+        public virtual Company Company { get; set; }
         #endregion
     }
 }

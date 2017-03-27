@@ -1,11 +1,14 @@
 ﻿using Russet.iMuneem.Base;
 using Russet.iMuneem.Categories;
+using Russet.iMuneem.Organization;
 using System;
+using System.Collections.Generic;
 
 namespace Russet.iMuneem.Ledgers
 {
     public class Account : DomainObject
     {
+        public Guid CompanyID { get; set; }
         public Guid GroupID { get; set; }
 
         public string Name { get; set; }
@@ -28,6 +31,7 @@ namespace Russet.iMuneem.Ledgers
 
         #region Navigation Properties
         public virtual Group Group { get; set; }
+        public virtual Company Company { get; set; }
         #endregion
     }
 }

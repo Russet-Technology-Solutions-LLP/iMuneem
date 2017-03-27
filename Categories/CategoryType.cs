@@ -1,10 +1,13 @@
 ﻿using Russet.iMuneem.Base;
+using Russet.iMuneem.Organization;
+using System;
 using System.Collections.Generic;
 
 namespace Russet.iMuneem.Categories
 {
     public class CategoryType : DomainObject
     {
+        public Guid CompanyID { get; set; }
         public string Type { get; set; }
 
         ///<summary>
@@ -21,6 +24,7 @@ namespace Russet.iMuneem.Categories
 
         #region Navigation Properties
         public virtual IList<Category> Categories { get; set; }
+        public virtual Company Company { get; set; }
         #endregion
     }
 }
